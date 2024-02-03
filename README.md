@@ -1,6 +1,6 @@
 <h1 align="center"> The EstelarClass! </h1>
 
-<p align="center"><img scr="./img/planet.gif" width="100px" height="100px"/></p>
+<p align="center"><img src="./img/planet.gif" width="150px" height="150px"/></p>
 
 <p align="justify"> &emsp; The <b>EstelarClass<b/> is a system that will serve for the <b><i>COMPARATIVE ANALYSIS OF MACHINE LEARNING METHODS FOR THE IDENTIFICATION OF TRANSITING EXOPLANETS</i></b>.
 
@@ -12,7 +12,7 @@
 
  &emsp; This project is being developed for the completion of the Computer Science course at UNESC with the assistance of Dr. Leandro Neckel ([@leandroneckel](https://github.com/leandroneckel)) and Dr. André Ruaro.
 
-<p align="center"><img scr="./img/space.gif" width="100px" height="100px"/></p>
+<p align="center"><img src="./img/space.gif" width="100px" height="100px"/></p>
 
 <h2>Justification:</h2>
 
@@ -40,5 +40,5 @@
   <li><a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TOI"> TESS </a></li>
 </ul>
 <hr/>
-<p align="center"><img scr="./img/explorer.gif" width="100px" height="100px"/></p>
+<p align="center"><img src="./img/explorer.gif" width="100px" height="100px"/></p>
 <h5 align="center"><a href="https://drive.google.com/file/d/1OyUQXRMwHV8GIHvFLEzkz4e8cc29dLni/view?usp=sharing"> Access the final graduation project here. </a></h5>
