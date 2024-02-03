@@ -1,0 +1,35 @@
+# This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu
+# Sat Feb  3 13:18:11 2024
+#
+
+# COLUMN koi_disposition: Exoplanet Archive Disposition
+# COLUMN ra:             RA [decimal degrees]
+# COLUMN dec:            Dec [decimal degrees]
+# COLUMN koi_steff:      Stellar Effective Temperature [K]
+# COLUMN koi_srad:       Stellar Radius [Solar radii]
+# COLUMN koi_prad:       Planetary Radius [Earth radii]
+# COLUMN koi_teq:        Equilibrium Temperature [K]
+# COLUMN koi_slogg:      Stellar Surface Gravity [log10(cm/s**2)]
+# COLUMN koi_period:     Orbital Period [days]
+# COLUMN koi_duration:   Transit Duration [hrs]
+# COLUMN koi_depth:      Transit Depth [ppm]
+# COLUMN koi_insol:      Insolation Flux [Earth flux]
+
+
+# Colunas que não serão utilizadas
+
+# COLUMN koi_fpflag_nt:  Not Transit-Like False Positive Flag
+# COLUMN koi_fpflag_ss:  Stellar Eclipse False Positive Flag
+# COLUMN koi_fpflag_co:  Centroid Offset False Positive Flag
+# COLUMN koi_fpflag_ec:  Ephemeris Match Indicates Contamination False Positive Flag
+# COLUMN koi_impact:     Impact Parameter
+# COLUMN koi_model_snr:  Transit Signal-to-Noise
+# COLUMN koi_tce_plnt_num: TCE Planet Number
+# COLUMN koi_tce_delivname: TCE Delivery
+# COLUMN kepid:          KepID
+# COLUMN kepoi_name:     KOI Name
+# COLUMN kepler_name:    Kepler Name
+# COLUMN koi_time0bk:    Transit Epoch [BKJD]
+# COLUMN koi_pdisposition: Disposition Using Kepler Data
+# COLUMN koi_score:      Disposition Score
+# COLUMN koi_kepmag:     Kepler-band [mag]

@@ -1,0 +1,16 @@
+#### ANOTAÇÕES - 03/02/2024
+
+## TRATAR COLUNAS
+
+# Kepler tem RA e Dec porem em deg, logo, deve ser calculado tbm em sexagesimal.
+# Kepler e K2 precisam calcular as variações do  Stellar Effective Temperature.
+# Mesma situação com as variações de Stellar Radius.
+# Kepler e K2 não tem as variações do Planet Radius (Earth)
+# Kepler e K2 não tem as  variações do Equilibrium.
+# Kepler nao tem a distance/stellar distance.
+# Kepler e K2 não tem as variações do log10.
+# Kepler e K2 não tem as variações do Orbital Period.
+# K2 nao tem Transit Duration e Depth.
+# Kepler e K2 não tem as variações do Transit Duration e Depth.
+# Verificar o campo magnitude
+# Kepler e K2 não tem as variações do campo Insolation Flux.
