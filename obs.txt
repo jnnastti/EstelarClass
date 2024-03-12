@@ -7,10 +7,24 @@
 # Mesma situação com as variações de Stellar Radius.
 # Kepler e K2 não tem as variações do Planet Radius (Earth)
 # Kepler e K2 não tem as  variações do Equilibrium.
-# Kepler nao tem a distance/stellar distance.
 # Kepler e K2 não tem as variações do log10.
 # Kepler e K2 não tem as variações do Orbital Period.
-# K2 nao tem Transit Duration e Depth.
 # Kepler e K2 não tem as variações do Transit Duration e Depth.
-# Verificar o campo magnitude
 # Kepler e K2 não tem as variações do campo Insolation Flux.
+
+# Kepler nao tem a distance/stellar distance.
+# K2 nao tem Transit Duration e Depth.
+# Verificar o campo magnitude
+
+#### ANOTAÇÕES - 07/03/2024
+
+# Tratado a latitude e longitude do KEPLER para criar a coluna que possui os dados em sexagesimal.
+# Não consegui calcular Stellar Effective Temperature, Stellar Radius,  Planet Radius (Earth) e Equilibrium.
+# Feita a tentativa de calcular a distancia
+
+#### ANOTAÇÕES - 11/03/2024
+
+# Foi visto que não há necessidade de criar novas colunas com as variações dos dados.
+# O campo magnitude é medido de maneiras diferentes em cada base, então recomenda-se utilizar somente quando 
+  for feito o teste com as bases diferentes.
+# Feito o Depth da missão K2
