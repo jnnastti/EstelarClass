@@ -28,3 +28,8 @@
 # O campo magnitude é medido de maneiras diferentes em cada base, então recomenda-se utilizar somente quando 
   for feito o teste com as bases diferentes.
 # Feito o Depth da missão K2
+
+#### ANOTAÇÕES - 18/03/2024
+
+# Acho que se investigar melhor, dá pra calcular o transit duration do K2
+# Feita as funções para tratar valores nulos (imput de valor aleatorio, por média ou mediana)
