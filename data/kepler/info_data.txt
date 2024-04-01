@@ -11,12 +11,13 @@
 # COLUMN koi_teq:        Equilibrium Temperature [K]
 # COLUMN koi_slogg:      Stellar Surface Gravity [log10(cm/s**2)]
 # COLUMN koi_period:     Orbital Period [days]
-# COLUMN koi_duration:   Transit Duration [hrs]
 # COLUMN koi_depth:      Transit Depth [ppm]
 # COLUMN koi_insol:      Insolation Flux [Earth flux]
 
 
 # Colunas que não serão utilizadas
+
+# COLUMN koi_duration:   Transit Duration [hrs] 
 
 # COLUMN koi_fpflag_nt:  Not Transit-Like False Positive Flag
 # COLUMN koi_fpflag_ss:  Stellar Eclipse False Positive Flag

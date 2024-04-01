@@ -33,3 +33,11 @@
 
 # Acho que se investigar melhor, dá pra calcular o transit duration do K2
 # Feita as funções para tratar valores nulos (imput de valor aleatorio, por média ou mediana)
+
+#### ANOTAÇÕES - 27/03/2024
+
+# Feita a tratativa da tipagem dos dados que estavam como object.
+# Foi verificado se todas as colunas estão na mesma escala (fiquei com um pouco de duvida sobre o stellar_sur_gravity)
+# Para esse mês, faltou o Escalonamento e boxplot
+# Feita a classificação dos dados
+# Por alguma razão a conversão de sexagesimal para segundos não funcionou (e será que precisa dessa coordenada sendo que já tem a normal?)
