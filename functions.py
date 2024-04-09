@@ -1,22 +1,6 @@
-def decimal_to_sexagesimal(decimal_degrees):
-    degrees = int(decimal_degrees)
-    minutes = int((decimal_degrees - degrees) * 60)
-    seconds = (decimal_degrees - degrees - minutes / 60) * 3600
-    return f"{degrees}h{minutes}m{seconds:.2f}s"
-
 import numpy as np
 
-# Constante de Stefan-Boltzmann (W/m^2K^4)
-sigma = 5.67e-8  
-
-# Função para calcular a luminosidade da estrela em termos de luminosidade solar
-def calculate_luminosity(stellar_radius, stellar_temperature):
-    return 4 * np.pi * (stellar_radius ** 2) * sigma * (stellar_temperature ** 4)
-
-# Function to calculate stellar distance in parsecs
-def calculate_stellar_distance(luminosity, insolation_flux):
-    return np.sqrt(luminosity / (4 * np.pi * insolation_flux))
-
+# Calculo de DEPTH
 def transit_depth(planet_radius, star_radius):
     """
     Calculates the transit depth of an exoplanet.
@@ -31,7 +15,26 @@ def transit_depth(planet_radius, star_radius):
     depth = (planet_radius / star_radius) ** 2 * 1e6
     return depth
 
-def impute_random(df, column_name):
+# Converter coordenadas para sexagesimal
+def decimal_to_sexagesimal(decimal_degrees):
+    degrees = int(decimal_degrees)
+    minutes = int((decimal_degrees - degrees) * 60)
+    seconds = (decimal_degrees - degrees - minutes / 60) * 3600
+    return f"{degrees}h{minutes}m{seconds:.2f}s"
+
+# Calculando o Distance
+sigma = 5.67e-8 # Constante de Stefan-Boltzmann (W/m^2K^4)  
+
+# Função para calcular a luminosidade da estrela em termos de luminosidade solar
+def calculate_luminosity(stellar_radius, stellar_temperature):
+    return 4 * np.pi * (stellar_radius ** 2) * sigma * (stellar_temperature ** 4)
+
+# Função para calcular o stellar distance em parsecs
+def calculate_stellar_distance(luminosity, insolation_flux):
+    return np.sqrt(luminosity / (4 * np.pi * insolation_flux))
+
+# Colocar valor aleatorio mas de acordo com os Quartis para que não fuja tanto da realidade
+def imput_random(df, column_name):
     # Calcula quartis inferiores e superiores
     q1 = df[column_name].quantile(0.25)
     q3 = df[column_name].quantile(0.75)
@@ -50,6 +53,7 @@ def impute_random(df, column_name):
     missing_count = df[column_name].isnull().sum()
     imputed_values = np.random.uniform(q1, q3, missing_count)
     dfx = df.copy()
+
     # Atualiza os valores faltantes no DataFrame
     dfx.loc[dfx[column_name].isnull(), column_name] = imputed_values
     

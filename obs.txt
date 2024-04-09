@@ -41,3 +41,38 @@
 # Para esse mês, faltou o Escalonamento e boxplot
 # Feita a classificação dos dados
 # Por alguma razão a conversão de sexagesimal para segundos não funcionou (e será que precisa dessa coordenada sendo que já tem a normal?)
+
+### ANOTAÇÕES - 01/04/2024
+
+foi selecionado modelos de classificação mais classicos.  Optamos nao nao usar redes neurais: 1- base pequena, acreditando que, 
+se obtido um bom resultado, cogitaremos novamente o uso da rede neural.
+
+escalonar - utilizar o pre processing do sklearn. Porque os valores anteriores ficam salvos, assim é possivel inverter o escalonamento.
+bloxplot - serve para ver os valores faltantes. 
+
+### ANOTAÇÕES - 08/04/2024
+
+Visto que os dados em sexagesimal nao sao necessarios.
+Organização e separação dos tratamentos para cada base.
+
+OBS: É importante tomar um pouco mais de cuidado com duas colunas: eq_temperatura e insol_flux, pois elas tem muito menos dados não nulos que as demais. 
+     E a quantidade de nulos representa uma proporção bem grande em relação ao shape[0] do DF.
+
+     Caso tenha formato próximo a uma distribuição normal, vale tentar imputar com valor aleatório baseado na média e desvio padrão. 
+     Mas é importante fazer um comparativo de antes e depois da imputação para ver se o formato não mudou muito.
+
+     No caso da insol_flux da K2, 50% dos dados tem valor de insol_flux igual ou menor que 68.55 (mediana). E a média é de 981.89. 
+     Aqui não faz sentido imputar com valor aleatório baseado na média e desvio padrão. Entretanto, também não acho conveniente imputar 
+     um valor único (mediana, nesse caso). Aqui vejo duas possibildades:
+
+      1. Imputar por um valor aleatório de uma distribuição homogênea baseado nos valores da distância interquartil (16.60 e 234.31)
+      2. Pensar em, primeiro, concatenar os 3 DFs para depois imputar os nulos. Assim teríamos mais dados para averiguar a distribuição 
+         dos dados nas colunas que possuem faltantes e tomar uma decisão melhor baseada sobre a imputação.
+
+Não foi necessario utilizar o boxplot.
+
+escalonamento - Optamos por utilizar minMax pois a maioria dos dados sao nao normais. (assim como optamos por imputar por valores aleatórios 
+                 dentro da distância interquartil pelo mesmo motivo).
+                 Perde menos tempo e, como a base é relativamente pequena, acredito que não fará diferença significativa no desempenho do modelo.
+
+                 Exploração de outros métodos de escalonamento da base ficará como proposição de trabalhos futuros.
