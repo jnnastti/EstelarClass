@@ -99,3 +99,6 @@ Escolha dos modelos de ML:
   Ela é robusta e eficiente, especialmente quando a relação entre as características e a classe de destino é aproximadamente 
   linear. Além disso, fornece probabilidades associadas às previsões, o que pode ser útil para interpretar a confiança do modelo em suas previsões.
 
+### ANOTAÇÕES - 12/04/2024
+
+Corrigido a divisão das bases de teste e treinamento. os registros classificados como "CANDIDATE" serão utilizados somente quando tivermos o modelo final.
