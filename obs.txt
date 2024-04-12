@@ -76,3 +76,26 @@ escalonamento - Optamos por utilizar minMax pois a maioria dos dados sao nao nor
                  Perde menos tempo e, como a base é relativamente pequena, acredito que não fará diferença significativa no desempenho do modelo.
 
                  Exploração de outros métodos de escalonamento da base ficará como proposição de trabalhos futuros.
+
+### ANOTAÇÕES - 11/04/2024
+
+Preciso de apoio com os outliers.
+Tratar os NaN.
+
+Escolha dos modelos de ML:
+  Naive Bayes:  é conhecido por sua simplicidade e eficiência computacional. Ele assume independência condicional entre as características, 
+  o que pode não ser verdadeiro em todos os casos, mas ainda assim tende a funcionar bem em conjuntos de dados com muitas características
+   e uma quantidade moderada de dados.
+
+  K-Vizinhos Mais Próximos (K-NN): O algoritmo K-NN é simples de entender e implementar. Ele faz parte da categoria de 
+  "métodos baseados em instância", o que significa que não requer treinamento explícito, apenas memoriza os dados de treinamento.
+
+  Árvores de Decisão: As árvores de decisão são altamente interpretáveis e podem lidar com uma variedade de tipos de dados, 
+  incluindo numéricos e categóricos. Elas são capazes de capturar interações complexas entre as características e são menos 
+  sensíveis a outliers em comparação com outros modelos. Além disso, as árvores de decisão naturalmente lidam com conjuntos 
+  de dados desbalanceados e são robustas a dados ruidosos.
+
+  Regressão Logística: A regressão logística é um modelo linear generalizado usado para problemas de classificação binária. 
+  Ela é robusta e eficiente, especialmente quando a relação entre as características e a classe de destino é aproximadamente 
+  linear. Além disso, fornece probabilidades associadas às previsões, o que pode ser útil para interpretar a confiança do modelo em suas previsões.
+
