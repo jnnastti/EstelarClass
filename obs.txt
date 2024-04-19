@@ -101,4 +101,19 @@ Escolha dos modelos de ML:
 
 ### ANOTAÇÕES - 12/04/2024
 
-Corrigido a divisão das bases de teste e treinamento. os registros classificados como "CANDIDATE" serão utilizados somente quando tivermos o modelo final.
+  Corrigido a divisão das bases de teste e treinamento. os registros classificados como "CANDIDATE" serão utilizados somente quando tivermos o modelo final.
+
+
+### ANOTAÇÕES - 18/04/2024
+
+  Tratados os valores que estavam como NaN.
+
+  Visto que não é mais necessario Outliers, pois base de dados é pequena e, por conta disso, uma remoção de outliers 
+  pode afetar significativamente a distribuição dos targets em uma base não balanceada. Como exemplo, verificou-se que, 
+  ao aplicar uma tecnica de remoção de outliers baseada em aplicação de arvores de decisão, mesmo com a 
+  consideração de uma baixa proporção de contaminação (< 1%) não sobraram targets positivos ('planet'). E isso impossibilita o treinamento do modelo.
+
+  Renomeei os arquivos pois descobri que .py não pode iniciar com numeros.
+
+  Separei as bases do EstelarClass para melhor entendimento.
+  Adicionamos o balanceamento das bases.
