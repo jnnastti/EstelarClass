@@ -117,3 +117,8 @@ Escolha dos modelos de ML:
 
   Separei as bases do EstelarClass para melhor entendimento.
   Adicionamos o balanceamento das bases.
+
+### ANOTAÇÕES 22/04/2024
+
+  Criando a base concatenada.
+  Iniciando o artigo.
