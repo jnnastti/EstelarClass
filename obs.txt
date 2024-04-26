@@ -120,5 +120,61 @@ Escolha dos modelos de ML:
 
 ### ANOTAÇÕES 22/04/2024
 
-  Criando a base concatenada.
+  Criado a base concatenada.
   Iniciando o artigo.
+
+### ANOTAÇÕES 25/04/2024
+
+  Adicionado o calculo de F1, RECALL E PRECISION.
+  Criado um DF para deixar salvo os dados.
+
+    Accuracy (Acurácia):
+    A acurácia mede a proporção de previsões corretas (planetas corretamente identificados como planetas e não planetas corretamente 
+    identificados como não planetas) em relação ao total de previsões.
+    A acurácia é uma métrica adequada se todas as classes tiverem importância semelhante e a distribuição das classes for balanceada.
+    
+    Precision (Precisão):
+    A precisão mede a proporção de instâncias corretamente identificadas como positivas (planetas) em relação ao total de instâncias 
+    identificadas como positivas (verdadeiros positivos mais falsos positivos).
+    A precisão é útil se você deseja minimizar o número de falsos positivos, ou seja, casos em que um objeto é incorretamente 
+    classificado como um planeta quando na verdade não é.
+    
+    Recall (Revocação):
+    O recall mede a proporção de instâncias positivas (planetas) corretamente identificadas em relação ao total de instâncias positivas 
+    (verdadeiros positivos mais falsos negativos).
+    O recall é importante se você deseja minimizar o número de falsos negativos, ou seja, casos em que um planeta é incorretamente 
+    classificado como não planeta.
+    
+    F1 Score:
+    O F1 score é a média harmônica da precisão e do recall. Ele fornece uma única métrica que combina precisão e recall em uma única medida.
+    O F1 score é útil se você deseja encontrar um equilíbrio entre precisão e recall e evitar que um seja otimizado em detrimento do outro.
+
+  Verificar se será necessario mexer nos hiperparametros
+  
+    Naive Bayes:
+    O Naive Bayes é um modelo simples e eficaz, mas não possui muitos hiperparâmetros para ajustar. No entanto, em algumas variantes do 
+    Naive Bayes, como o Gaussian Naive Bayes, você pode ter hiperparâmetros como a variação mínima de uma característica ou a 
+    distribuição de probabilidade condicional.
+    
+    K-Nearest Neighbors (KNN):
+    Para o KNN, o hiperparâmetro mais importante é o valor de K, que representa o número de vizinhos mais próximos a serem 
+    considerados ao fazer uma previsão. Você pode usar técnicas de busca em grade ou validação cruzada para encontrar o melhor valor de K.
+    
+    Árvore de Decisão:
+    Para árvores de decisão, você pode ajustar hiperparâmetros como a profundidade máxima da árvore, o número mínimo de 
+    amostras necessárias para dividir um nó e o número mínimo de amostras em cada folha. Experimente diferentes valores desses 
+    hiperparâmetros para encontrar a configuração que otimiza o desempenho do modelo.
+    
+    Regressão Logística:
+    Na regressão logística, você pode ajustar hiperparâmetros como a regularização (por exemplo, regularização L1 ou L2), o 
+    parâmetro de regularização (também conhecido como força de regularização), e a técnica de otimização (por exemplo, gradiente 
+    descendente estocástico). Experimente diferentes valores desses hiperparâmetros para encontrar a configuração que otimiza o desempenho do modelo.
+
+  Aplicar Validação Cruzada (Cross-Validation):
+    A validação cruzada é uma técnica para avaliar o desempenho do modelo usando amostras de dados não usadas no 
+    treinamento (conjunto de validação). Você pode usar a validação cruzada em conjunto com a busca em grade para avaliar 
+    o desempenho do modelo para diferentes combinações de hiperparâmetros.
+
+  Verificar utilização de Busca em Grade (Grid Search):
+    A busca em grade é uma técnica poderosa para encontrar os melhores hiperparâmetros para um modelo de machine learning 
+    de forma automatizada e eficiente. Ela é amplamente utilizada na prática para ajustar modelos e melhorar seu desempenho.
