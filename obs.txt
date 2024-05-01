@@ -178,3 +178,21 @@ Escolha dos modelos de ML:
   Verificar utilização de Busca em Grade (Grid Search):
     A busca em grade é uma técnica poderosa para encontrar os melhores hiperparâmetros para um modelo de machine learning 
     de forma automatizada e eficiente. Ela é amplamente utilizada na prática para ajustar modelos e melhorar seu desempenho.
+
+
+### ANOTAÇÕES 30/04/2024
+
+  Como a Decision Tree teve bons resultados, decidimos colocar também a random forest.    
+
+  O maior risco em uma IA que classifica se um objeto é ou não um planeta depende do contexto e das consequências de uma classificação errada. 
+  No entanto, considerando que a definição precisa de um planeta é crucial em muitos contextos astronômicos e científicos, classificar erroneamente 
+  algo como um planeta quando na verdade não é pode ter consequências significativas. Por exemplo, se um objeto não for um planeta, mas for 
+  classificado como tal, isso pode distorcer nossas compreensões sobre a composição e a dinâmica de sistemas planetários, influenciando pesquisas futuras e até mesmo missões espaciais.
+
+  Por outro lado, classificar erroneamente um planeta como algo que não é um planeta pode levar a uma subestimação da presença de planetas em 
+  sistemas estelares, mas pode não ter tantas consequências negativas em termos de entendimento científico geral. No entanto, ainda pode causar 
+  problemas em termos de precisão e confiabilidade da IA.
+
+  Separado os melhores modelos de cada Missão
+
+  Não entendi muito bem a aplicação do GridSearch
