@@ -196,3 +196,15 @@ Escolha dos modelos de ML:
   Separado os melhores modelos de cada Missão
 
   Não entendi muito bem a aplicação do GridSearch
+
+
+### ANOTAÇÕES 02/05/2024
+
+  Alguns modelos tem aleatoriedades associadas (DecisionTree, LogisticRegression e RandomForest). Isso significa que, se você treinar 
+  dois modelos com a mesma base de dado, possivelmente um modelo vai ser diferente do outro. Para garantir a reprodutibilidade, 
+  é necessário que a aleatoriedade seja "bloqueada", ou seja, que se eu treinar dois modelos, a inicialização de dados aleatórios seja 
+  igual para os dois. Isso, nesses algoritmos, é feito por meio do random_state = ... . Assim, vais ver que nas células onde modelos 
+  são treinados com base nesses algoritmos, eu adicionei um novo instanciamento do algoritmo (conforme mencionei antes), 
+  mas com o argumento random_state = 42. Exemplo: modeloDT = DecisionTreeClassifier(random_state=42)
+
+  Feita a matriz de confusão dos dados otimizados
