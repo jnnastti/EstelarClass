@@ -208,3 +208,7 @@ Escolha dos modelos de ML:
   mas com o argumento random_state = 42. Exemplo: modeloDT = DecisionTreeClassifier(random_state=42)
 
   Feita a matriz de confusão dos dados otimizados
+
+### ANOTAÇÕES 06/05/2024
+
+  Treinado um classificador por votação para cada uma  das bases e  feita as métricas + matriz de  confusão.
