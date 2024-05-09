@@ -212,3 +212,9 @@ Escolha dos modelos de ML:
 ### ANOTAÇÕES 06/05/2024
 
   Treinado um classificador por votação para cada uma  das bases e  feita as métricas + matriz de  confusão.
+
+## ANOTAÇÕES 09/05/2024
+
+  Analisado que o classificador por votação não teve diferença.
+
+  Cada base será treinada em cada modelo.
