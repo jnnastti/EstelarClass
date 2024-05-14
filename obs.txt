@@ -213,8 +213,16 @@ Escolha dos modelos de ML:
 
   Treinado um classificador por votação para cada uma  das bases e  feita as métricas + matriz de  confusão.
 
-## ANOTAÇÕES 09/05/2024
+### ANOTAÇÕES 09/05/2024
 
   Analisado que o classificador por votação não teve diferença.
 
   Cada base será treinada em cada modelo.
+
+### ANOTAÇÕES 13/05/2024
+
+  Visto que o método adotado estava muito confuso, assim, foi refeito as analises e implementado de forma diferente.
+  Gerado graficos para visualização das classificações dos modelos para cada base.
+  Delimitado o que é ou não planeta de acordo com as classificações dos modelos.
+
+  Aparentemente, finalizado!
