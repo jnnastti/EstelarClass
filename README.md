@@ -27,18 +27,18 @@
 
 ## Como instalar:
 
-Para o desenvolvimento desse projeto, foi utilizado a versão 3.11.9 do python. Certifique-se que o mesmo está instalado em sua máquina. Além disso, utilizamos o versionamento do git e o sistema operacional Windows 10.
+Para o desenvolvimento desse projeto, foi utilizado a versão 3.11.9 do python. Certifique-se que o mesmo está instalado em sua máquina. Além disso, utilizamos o versionamento do git e o sistema operacional Windows 10. Recomendamento executar o projeto no VSCODE.
 
 1. Abra o terminal ou prompt de comando e navegue até o diretório onde deseja instalar o projeto. Execute o seguinte comando para clonar o repositório do GitHub (Esse passo é necessário somente no caso de você não ter o Script):
 ```bash
 git clone https://github.com/jnnastti/EstelarClass.git
 ```
-2. Crie o ambiente virtual venv no terminal dentro da pasta do projeto:
+2. Crie o ambiente virtual venv no terminal como administrador dentro da pasta do projeto:
 ```bash
 python -m venv venv
 ```
 
-3. Ative o venv no terminal:
+3. Abra o projeto no VSCODE e ative o venv no terminal:
 ```bash
 ./venv/Scripts/Activate.ps1
 ```
