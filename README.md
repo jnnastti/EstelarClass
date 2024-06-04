@@ -27,7 +27,7 @@
 
 ## Como instalar:
 
-Para o desenvolvimento desse projeto, foi utilizado a versão 3.11.9 do python. Certifique-se que o mesmo está instalado em sua máquina. Além disso, utilizamos o versionamento do git e o sistema operacional Windows 10. Recomendamento executar o projeto no VSCODE.
+Para o desenvolvimento desse projeto, foi utilizado a versão 3.11.9 do python. Certifique-se que o mesmo está instalado em sua máquina ou uma versão anterior. Além disso, utilizamos o versionamento do git e o sistema operacional Windows 10. Recomendamos executar o projeto no VSCODE.
 
 1. Abra o terminal ou prompt de comando e navegue até o diretório onde deseja instalar o projeto. Execute o seguinte comando para clonar o repositório do GitHub (Esse passo é necessário somente no caso de você não ter o Script):
 ```bash
@@ -49,11 +49,11 @@ Caso dê problema de execução de scripts no windows, será necessário habilit
 pip install -r requirements_final.txt
 ```
 
-5. Instale a extensão Python + Jupyter no VSCODE.
+5. Instale as extensões Python, Jupyter e as que a ferramenta solicitar na hora da execução no VSCODE.
 
 ## Como executar:
 
-1. Acesse e execute com o venv todos os arquivos de preprocessamento das bases (exemplo: k2_preprocessing.ipynb);
+1. Acesse e execute com o venv (clicando em Run All) todos os arquivos de preprocessamento das bases (exemplo: k2_preprocessing.ipynb);
 2. Verifique se os arquivos .pkl foram criados corretamente dentro da pasta de 
 cada base na pasta /data;
 3. Acesse e execute com o venv todos os arquivos das bases (exemplo: k2_base.ipynb);
